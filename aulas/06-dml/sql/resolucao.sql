@@ -66,3 +66,21 @@ INSERT INTO vendedor_vende_cidade
     (id_vendedor, id_cidade) 
 VALUES  
     (103, 20), (103, 21), (102, 20), (102, 24), (102, 25), (106, 23);
+    
+    
+DROP TABLE IF EXISTS vendedor_ativo_dia;
+CREATE TABLE vendedor_ativo_dia(
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_vendedor INT NOT NULL,
+    ativo TINYINT NOT NULL,
+    data_registro DATE NOT NULL
+);
+
+SELECT
+	id, ativo, NOW()
+FROM vendedor;
+
+INSERT INTO vendedor_ativo_dia (id_vendedor, ativo, data_registro)
+SELECT 	id AS id_vendedor, ativo, DATE(NOW()) AS data_registro
+FROM vendedor
+WHERE ativo = 1;
