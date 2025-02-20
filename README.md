@@ -1,2 +1,1 @@
-# md-bcc
-Megadados Ciência da Computação
+# Megadados Ciência da Computação
