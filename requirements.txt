@@ -1,0 +1,3 @@
+mysql-connector-python==8.3.0
+python-dotenv==1.0.0
+git+https://github.com/macielcalebe/insperautograding.git
