@@ -79,5 +79,5 @@ Os critérios de aprovação estão disponíveis nos slides da [**aula 01**](aul
 ## 🚀 Contribuições
 
 - Até 2022: [Fábio Ayres](https://github.com/FabioAyresInsper) criou o material da disciplina (ementa, slides, notebooks, etc.). Pensa em um trabalho difícil, nosso eterno agradecimento!
-- 2023-atualmente: [Maciel Vidal](https://github.com/macielcalebe) criou algumas aulas adicionais e uma ferramenta ([Insper Autograding](https://github.com/macielcalebe/insperautograding) e API REST) para suportar Autograding nos Jupyter Notebooks do curso.
+- 2023/1-atualmente: [Maciel Vidal](https://github.com/macielcalebe) criou algumas aulas adicionais e uma ferramenta ([Insper Autograding](https://github.com/macielcalebe/insperautograding) e API REST) para suportar Autograding nos Jupyter Notebooks do curso.
 - 2023/2: [Marcio Stabile](https://github.com/mfstabile) trabalhou com o Maciel na Disciplina. Fez autograding de algumas aulas e implementou autograding para Spark.
