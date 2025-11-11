@@ -1,0 +1,4 @@
+mysql-connector-python==8.3.0
+pandas>=2.3
+python-dotenv>=1.1
+git+https://github.com/macielcalebe/insperautograding.git
