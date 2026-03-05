@@ -1,3 +1,30 @@
+USE senhor_aneis;
+SHOW TABLES;
+
+SELECT * FROM personagens;
+SELECT * FROM missoes;
+SELECT SUM(valor_diaria * qtde_dias) FROM missoes;
+
+SELECT p.id, p.nome, p.raca, m.*
+FROM personagens AS p, missoes AS m
+WHERE p.id = m.id_personagem
+ORDER BY p.nome;
+
+
+INSERT INTO `senhor_aneis`.`personagens`
+(`id`,`nome`,`raca`,`nivel`,`valor_receber`)
+VALUES
+(500, 'Alex do Reino', 'Human', 2, 0),
+(501, 'Thais das Flores', 'Human', 3, 0);
+
+
+SELECT p.id, p.nome, p.raca, m.*
+FROM personagens AS p
+LEFT JOIN missoes AS m ON p.id = m.id_personagem
+WHERE m.id_personagem is null
+ORDER BY p.nome;
+
+
 USE cartracking;
 SELECT COUNT(*) AS qtde FROM cliente;
 SELECT * FROM cliente;
